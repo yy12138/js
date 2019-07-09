@@ -1,0 +1,17 @@
+let log = console.log.bind(console);
+let person = [
+     {id: 0, name: "小明"},
+     {id: 1, name: "小张"},
+     {id: 2, name: "小李"},
+     {id: 3, name: "小孙"},
+     {id: 1, name: "小周"},
+     {id: 2, name: "小陈"},   
+];
+
+let obj = {};
+
+person = person.reduce((cur,next) => {
+    obj[next.id] ? "" : obj[next.id] = true && cur.push(next);
+    return cur;
+},[]) //设置cur默认类型为数组，并且初始值为空的数组
+log(person);
