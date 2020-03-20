@@ -1,0 +1,1 @@
+Object.prototype.toString.call(array);得到字符串进行比较
