@@ -19,5 +19,11 @@ var deepCopy = function(o) {
 
 
 $.map([{},{},{}], function (obj) {
-                                return $.extend(true, {}, obj);//返回对象的深拷贝
-                            });
+ return $.extend(true, {}, obj);//返回对象的深拷贝
+ });
+ 
+ 
+ js 数组创建副本
+ const a = [1,2,3,4];
+ b = a.slice();
+ 
