@@ -27,3 +27,10 @@ $.map([{},{},{}], function (obj) {
  const a = [1,2,3,4];
  b = a.slice();
  
+ 对象创建新副本
+ function updateColorMap(colormap) {
+  return Object.assign({}, colormap, {right: 'blue'});
+}
+function updateColorMap(colormap) {
+  return {...colormap, right: 'blue'};
+}
