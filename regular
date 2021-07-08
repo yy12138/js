@@ -1,0 +1,79 @@
+export default {
+  "phoneRegular": [
+    {
+      "isOpen": true,
+      "regularValue": "^1\\d{10}$",
+      "errorMsg": "请输入正确的手机号！"
+    }
+  ],
+  "verificationCodeRegular": [
+    {
+      "isOpen": true,
+      "regularValue": "^\\d{6}$",
+      "errorMsg": "请输入6位数验证码！"
+    }
+  ],
+  "verificationSignPwdRegular": [
+    {
+      "isOpen": true,
+      "regularValue": "^\\d{6}$",
+      "errorMsg": "请输入6位数字签约密码！"
+    }
+  ],
+  "pwdRegular": [
+    {
+      "isOpen": true,
+      "regularValue": "^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$",
+      "errorMsg": "请输入8-16位字母数字组合密码！"
+    }
+  ],
+  "accountRegular": [
+    {
+      "isOpen": true,
+      "regularValue": "^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$",
+      "errorMsg": "请输入6-16位字母数字账号！"
+    }
+  ],
+  "personalNameRegular": [
+    {
+      "isOpen": true,
+      "regularValue": "^[\\S\\n\\s]{0,15}$",
+      "errorMsg": "姓名不能超过15个字符！"
+    },
+    {
+      "isOpen": true,
+      "regularValue": "^[\\u4e00-\\u9fa5_a-zA-Z]{0,}$",
+      "errorMsg": "名称必须为中英文！"
+    }
+  ],
+  "idNumberRegular": [
+    {
+      "isOpen": true,
+      "regularValue": "(^[1-9]\\d{5}(18|19|([23]\\d))\\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\\d{3}[0-9Xx]$)|(^[1-9]\\d{5}\\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\\d{2}[0-9Xx]$)",
+      "errorMsg": "身份证格式有误！"
+    }
+  ],
+  "eCodeRegular": [
+    {
+      "isOpen": true,
+      "regularValue": "^[^_IOZSVa-z\\W]{2}\\d{6}[^_IOZSVa-z\\W]{10}$",
+      "errorMsg": "企业信用代码有误！"
+    }
+  ],
+  "verifyMoney": [
+    {
+      "isOpen": true,
+      "regularValue": "(^[1-9]([0-9]+)?(\\.[0-9]{0,4})?$)|(^0\\.[0-9]{0,4}$)",
+      "errorMsg": "数值格式不正确"
+    }
+  ],
+  "isPositiveInteger": [
+    {
+      "isOpen": true,
+      "regularValue": "^[1-9][0-9]*$",
+      "errorMsg": "请输入正整数"
+    }
+  ]
+}
+
+
